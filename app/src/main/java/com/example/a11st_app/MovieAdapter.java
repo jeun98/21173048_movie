@@ -47,22 +47,28 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView movieName;
+        TextView openDate;
         TextView peopleCount;
         TextView ranking;
         TextView totalCount;
 
+
         public ViewHolder(View itemView) {
             super(itemView);
             movieName = itemView.findViewById(R.id.movieName);
+            openDate = itemView.findViewById(R.id.openDate);
             peopleCount = itemView.findViewById(R.id.peopleCount);
             ranking = itemView.findViewById(R.id.ranking);
             totalCount = itemView.findViewById(R.id.totalCount);
+
         }
         public void setItem(Movie item) {
             movieName.setText(item.movieNm);
+            openDate.setText(item.openDt);
             peopleCount.setText(item.audiCnt);
             ranking.setText(item.rank);
             totalCount.setText(item.audiAcc);
+
         }
     }
 }
