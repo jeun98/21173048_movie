@@ -52,7 +52,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView ranking;
         TextView totalCount;
 
-
         public ViewHolder(View itemView) {
             super(itemView);
             movieName = itemView.findViewById(R.id.movieName);

@@ -20,3 +20,4 @@ public class Movie {
     String scrnCnt;
     String showCnt;
 }
+
